@@ -30,7 +30,9 @@ or experimental artefacts from related work. We thank those authors for hosting 
 The general pipeline is as follows.
 
 
-0. We assume you have a flat FAISS index (`IndexFlatIP`) stored in a file called `my_flat.idx`.
+### Step 0: Setup
+
+ We assume you have a flat FAISS index (`IndexFlatIP`) stored in a file called `my_flat.idx`.
 See [FAISS](https://github.com/facebookresearch/faiss/wiki/Faiss-indexes) for more information.
 
 ### Step 1: Convert FAISS to a simple, sorted, float file.
@@ -72,7 +74,8 @@ the quantizer and a FAISS index; it outputs the compressed index
 ./encoder <your.bins> <your-faiss-flat.idx> <your-faiss-flat.idx.compressed>
 ```
 
-4. You can decode the index to get back to a lossy representation that can be queried.
+### Step 4: Decompress (lossy) index for querying
+You can decode the index to get back to a lossy representation that can be queried.
 ```
 ./decoder <your.bins> <your-faiss-flat.idx.compressed> <your-lossy-faiss.idx>
 ```
