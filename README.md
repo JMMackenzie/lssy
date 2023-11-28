@@ -6,6 +6,20 @@ Joel Mackenzie and Alistair Moffat (SIGIR-AP 2023).
 The code is a very simple series of hacked together C/C++/Python tools - sorry about that.
 I am very happy to help support any experiments you might want to run with our code, please make an issue if you need help.
 
+## Citation
+```
+@inproceedings{lssy,
+author = {Mackenzie, Joel and Moffat, Alistair},
+title = {Lossy Compression Options for Dense Index Retention},
+year = {2023},
+url = {https://doi.org/10.1145/3624918.3625316},
+doi = {10.1145/3624918.3625316},
+booktitle = {Proceedings of the Annual International ACM SIGIR Conference on Research and Development in Information Retrieval in the Asia Pacific Region},
+pages = {185–194},
+series = {SIGIR-AP '23}
+}
+```
+
 
 ## Building the Code
 
